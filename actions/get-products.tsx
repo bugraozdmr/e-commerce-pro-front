@@ -22,7 +22,7 @@ const getProducts = async (query : Query) : Promise<Product[]> => {
     });
 
     // caching olmasın dedim
-    const response = await fetch(URL,{ cache: 'no-store' });
+    const response = await fetch(url,{ cache: 'no-store' });
 
     return response.json();
 }
