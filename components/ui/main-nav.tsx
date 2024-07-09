@@ -1,11 +1,12 @@
 'use client';
 
 import { cn } from "@/lib/utils";
+import { Category } from "@/types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 interface MainNavProps {
-    data : any
+    data : Category[]
 }
 
 export const MainNav : React.FC<MainNavProps> = ({
@@ -13,7 +14,7 @@ export const MainNav : React.FC<MainNavProps> = ({
 }) => {
     const pathName = usePathname();
 
-    const routes = data.map((route) => ({
+    const routes = data.map((route) => ({
         href:`category/${route.id}`,
         label: route.name,
         active : pathName === `category/${route.id}`

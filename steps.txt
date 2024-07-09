@@ -1,0 +1,1 @@
+şuan bir categorydeyken başka kategoriye geçmek isteyince url patlıyor DUZELT
