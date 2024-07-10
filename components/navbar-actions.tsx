@@ -2,10 +2,12 @@
 
 import { ShoppingBag } from "lucide-react";
 import { useEffect, useState } from "react";
-import Button from "@/components/ui/button";
 
 import useCart from "@/hooks/use-cart";
 import { useRouter } from "next/navigation";
+import Button from "@/components/ui/button";
+
+
 
 export const NavbarActions = () => {
     const router = useRouter();
