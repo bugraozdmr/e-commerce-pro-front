@@ -2,7 +2,7 @@ import {create} from 'zustand';
 
 import { Product } from '@/types';
 
-interface PreviewModalProps{
+interface PreviewModalStore{
     isOpen: boolean;
     data? : Product;
     onOpen : (data:Product) => void;
@@ -10,7 +10,7 @@ interface PreviewModalProps{
 }
 
 
-const usePreviewModal = create<PreviewModalProps>((set) => ({
+const usePreviewModal = create<PreviewModalStore>((set) => ({
     isOpen : false,
     data : undefined,
     onOpen : (data : Product) => set({data : data , isOpen : true}),

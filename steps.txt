@@ -1,1 +1,7 @@
 şuan bir categorydeyken başka kategoriye geçmek isteyince url patlıyor DUZELT
+
+
+SFC nameless arrow func
+
+
+MOBile mode for images in single product page
